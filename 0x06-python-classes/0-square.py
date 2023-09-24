@@ -2,5 +2,5 @@
 """ Define the class Square. """
 
 class Square:
-    """Attributes of a square"""
+    """Attributes of a Square"""
     pass

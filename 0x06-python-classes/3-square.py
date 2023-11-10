@@ -3,6 +3,9 @@
 
 
 class Square:
+    """
+    A class representing the square
+    """
     def __init__(self, size=0):
         """
         This method initiates the Square

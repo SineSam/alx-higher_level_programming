@@ -8,7 +8,8 @@ class Rectangle:
     """
     def __init__(self, width=0, height=0):
         """Constructor method"""
-        pass
+        self.__width = width
+        self.__height = height
 
     @property
     def width(self):

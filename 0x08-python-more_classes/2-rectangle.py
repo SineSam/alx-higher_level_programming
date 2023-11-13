@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 """
 Module 1-rectangle
 This is a module that will define the rectangle class
@@ -18,8 +17,8 @@ class Rectangle:
         width: width of the rectangle
         heigh: height of the rectangle
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
@@ -58,3 +57,27 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
+    def area(self):
+        """method returns the area of the rectangle
+
+        Args:
+        height: int value height of the rectangle
+        width: int value width of the rectangle
+
+        Returns the product of height and width
+        """
+        return self.__height * self.__width
+
+    def perimeter(self):
+        """ method to calculate the perimeter of the rectangle
+
+        Args:
+        height: int value height of the rectangle
+        width: int value, width of the rectangle
+
+        Return: the sum of the sides of the rectangle
+        """
+        if self.__height == 0 or self.width == 0:
+            return 0
+        return (self.__height) * 2 + (self.__width) * 2

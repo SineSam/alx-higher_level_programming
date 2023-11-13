@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+#!/usr/bin/python3
 """
 Module 1-rectangle
 This is a module that will define the rectangle class
@@ -17,8 +18,8 @@ class Rectangle:
         width: width of the rectangle
         heigh: height of the rectangle
         """
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
 
     @property
     def width(self):

@@ -90,7 +90,8 @@ class Rectangle:
         string = ""
         if self.__height != 0 and self.__width != 0:
             string += "\n".join(
-                    "{}".format(self.print_symbol) * self.__width for j in range(0, self.__height))
+                    "{}".format(self.print_symbol) * self.__width
+                    for j in range(0, self.__height))
         return string
 
     def __repr__(self):

@@ -13,6 +13,7 @@ Usage
 
 ::
 
+>>> say_my_name = __import__('3-say_my_name').say_my_name
 >>> say_my_name("Sine", "Ngcongo")
 My name is Sine Ngcongo
 
@@ -21,12 +22,12 @@ My name is Sine Ngcongo
 >>> say_my_name("Martin Luther", "King Jnr")
 My name is Martin Luther King Jnr
 
-The parameter ```last_name``` is optional, if none provided, print empty string
+The parameter ``last_name`` is optional, if none provided, print empty string
 
 ::
 
->>> say_my_name("Sine")
-My name is Sine
+>>> say_my_name("Sine", last_name="")
+My name is Sine 
 
 Invalid names
 =============
@@ -35,7 +36,7 @@ The parameters ``first_name`` and ``last_name`` must be strings, else raise Type
 
 ::
 
->>> say_my_name([pear, apple], "Charles")
+>>> say_my_name(["pear", "apple"], "Charles")
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
@@ -47,7 +48,7 @@ TypeError: first_name must be a string
 
 ::
 
->>> say_my_name("Charles", Williams)
+>>> say_my_name("Charles", {"Williams": 2})
 Traceback (most recent call last):
 TypeError: last_name must be a string
 

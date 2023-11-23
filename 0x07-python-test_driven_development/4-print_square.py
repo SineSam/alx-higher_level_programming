@@ -1,4 +1,4 @@
-#!/usr/bin/pythin3
+#!/usr/bin/python3
 # 4-print_square.py
 """This module contains a method that prints a square"""
 

@@ -10,8 +10,9 @@ def print_square(size):
     size (integer): Length of a square
 
     raises:
-    TypeError: size is not an integer
-    ValueError: size is less than zero
+    TypeError if size is  float and less than 0
+    TypeError if size is not an integer
+    ValueError if size is less than zero
     """
     if isinstance(size, float) and size < 0:
         raise TypeError("size must be an integer")
@@ -21,6 +22,7 @@ def print_square(size):
         raise ValueError("size must be >= 0")
 
     print(("#" * size + "\n") * size, end="")
+
 
 if __name__ == "__main__":
     import doctest

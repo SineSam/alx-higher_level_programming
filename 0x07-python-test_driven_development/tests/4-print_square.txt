@@ -1,0 +1,55 @@
+# 4-print_square.txt
+====================
+
+Using ``print_square(size)``
+--------------------------
+
+This module describes how to use the ``print_square()`` method
+
+Usage
+=====
+
+``print_square takes the argument size and prints a square with the character # with dimentions of size length and size height.
+
+::
+
+>>> print_square = __import__('4-print_square').print_square
+>>> print_square(2)
+##
+##
+
+If size is zero, print empty line
+
+::
+
+>>> print_square(0)
+
+
+Invalid sizes
+-------------
+If size is less than zero, raise ValueError
+
+::
+
+>>> print_square(-1)
+Traceback (most recent call back):
+...
+ValueError: size must be >= 0
+
+Size must be an integer, otherwise raise a TypeError
+
+::
+
+>>> print_square(1.2)
+Traceback (most recent call back):
+...
+TypeError: size must be an integer
+
+if size is a float and is less than 0, raise a TypeError
+
+::
+
+>>> print_square(-1.2)
+Traceback (most recent call back):
+...
+TypeError: size must be an integer

@@ -11,4 +11,4 @@ def lookup(obj):
     Args:
     obj: Object to be analysed
     """
-    return ([obj.__dict__])
+    return dir(obj)
